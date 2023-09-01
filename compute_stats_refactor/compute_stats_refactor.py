@@ -86,5 +86,6 @@ def compute_stats(file):
  
 if __name__ == '__main__':
     compute_stats('random_nums.txt')
+#    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
     
  
