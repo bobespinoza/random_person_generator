@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- 
 """
-Created on Sun Jul 16 19:31:54 2023
+Created on Sun Jul 16 19:31:54 2023 
 
 @author: Espinoza_MacBookPro
 """
@@ -85,7 +85,6 @@ def compute_stats(file):
     print(f'Standard deviation = {a.list_stdev(int_list)}')
  
 if __name__ == '__main__':
-#    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
     compute_stats('random_nums.txt')
     
  
