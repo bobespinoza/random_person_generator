@@ -18,7 +18,7 @@ class TestTddRefactor(unittest.TestCase):
 
     def test_read_ints(self):
         stats = TddRefactor()
-        file = '/compute_stats_refactor/random_nums.txt'
+        file = 'compute_stats_refactor/random_nums.txt'
         self.assertEqual(stats.read_ints(file), self.file_list)
 
     def test_summation(self):
