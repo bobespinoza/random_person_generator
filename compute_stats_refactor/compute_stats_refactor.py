@@ -38,6 +38,7 @@ class TddRefactor:
         total = self.summation(list)
         list_avg = round(total/len(list))
         return list_avg
+    
     def list_min(self, list):
         self.list = list
         list_min = 10000
@@ -45,6 +46,7 @@ class TddRefactor:
             if list_min > num:
                 list_min = num
         return list_min
+    
     def list_max(self, list):
         self.list = list
         list_max = 0
@@ -58,9 +60,17 @@ class TddRefactor:
         self.list = list
         list_count = self.count(list)
         for num in self.list:
-            list_recip.append(1/num)
+            try:
+                list_recip.append(1/num)
+            except ZeroDivisionError:
+                list_recip.append(0)
+                print("Failed due to divide by zero - check input file")
         total = self.summation(list_recip)
-        list_harm = round(list_count/total)
+        try:
+            list_harm = round(list_count/total)
+        except ZeroDivisionError:
+            list_harm = 0
+            print("Failed due to divide by zero - check input file")
         return list_harm
 
     def list_variance(self, list):
@@ -85,7 +95,7 @@ def compute_stats(file):
     print(f'Standard deviation = {a.list_stdev(int_list)}')
  
 if __name__ == '__main__':
-    compute_stats('random_nums.txt')
-#    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
+#    compute_stats('random_nums.txt')
+    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
     
  
