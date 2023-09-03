@@ -95,7 +95,7 @@ def compute_stats(file):
     print(f'Standard deviation = {a.list_stdev(int_list)}')
  
 if __name__ == '__main__':
-#    compute_stats('random_nums.txt')
-    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
+    compute_stats('random_nums.txt')
+#    compute_stats('/Users/Espinoza_MacBookPro/Desktop/Python/project/compute_stats_refactor/random_nums.txt')
     
  
